@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <title>Custom Event Countdown</title>
+</head>
+<body>
+  <div class="container">
+    <h1 id="event-title">Project Deadline</h1>
+    <p>Time remaining until submission:</p>
+    <div id="timer" class="countdown-display">Loading timer...</div>
+
+    <!-- New Interactive Input Section -->
+    <div class="input-section">
+      <h3>Customize Event</h3>
+      <input type="text" id="event-name-input" placeholder="Enter event name...">
+      <input type="datetime-local" id="event-date-input">
+      <button id="update-btn">Start Countdown</button>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
