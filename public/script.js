@@ -38,3 +38,20 @@ document.getElementById("update-btn").addEventListener("click", function() {
     document.getElementById("timer").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
   }, 1000);
 });
+// Function to log the visit to the backend API
+async function logVisit() {
+  try {
+    await fetch('/api/visit', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    });
+    console.log("Visitor data logged.");
+  } catch (error) {
+    console.error("Error logging visit:", error);
+  }
+}
+
+// Call the function immediately when the script loads
+logVisit();
