@@ -12,9 +12,10 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+    "cors": "^2.8.6",
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
-    "mongoose": "^9.8.1"
+    "mongoose": "^9.9.0"
   },
   "repository": {
     "type": "git",
